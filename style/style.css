@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    position:center;
+    width:auto;
+    margin-top: 20px;
+
+}
+
+.game .board {
+    margin: 30px auto;
+    position: center;
+    background: #fff;
+    width: 540px;
+    border: 2px solid #ddd;
+    box-shadow:
+    2px 2px 2px 5px darkslategrey,
+    0px 0px 0px 20px darkgray,
+    2px 2px 2px 23px darkslategrey,
+    0px 0px 0px 30px darkgray,
+    1px 1px 2px 33px darkslategrey,
+    200px 200px 0px -150px darkblue,
+    -200px 200px 0px -150px darkblue,
+    -200px -200px 0px -150px darkblue,
+    200px -200px 0px -150px darkblue,
+    0px 0px 0px 60px dodgerblue;
+}
+
+.game .tile {
+    border: 2px solid #ddd;
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/back.jpg');
+    background-position:center;
+    background-size: contain;
+    display: inline-block;
+    margin-left:2px;
+    margin-right:2px;
+    box-shadow: 2px 2px 1px 2px gray ;
+
+}
+
+.score {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+.done {
+    pointer-events: none;
+}
+
+
+.game .tile:hover {
+    border:2px solid deepskyblue;
+    transition: border 0.5s;
+}
+
+
+.start{
+    padding: 1em 3em;
+    background: darkgray;
+    color: #FFF;
+    text-shadow: -2px -2px 1px darkslategrey;
+    border: 2px solid darkslategrey;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+    margin:31px auto;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 0px darkslategrey;
+}
+
+.start:hover {
+    box-shadow: 5px 5px 2px  darkslategrey;
+    transition: 0.5s box-shadow;
+}
